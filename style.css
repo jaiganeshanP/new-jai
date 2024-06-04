@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    
+}
+
+body {
+    line-height: 1.6;
+    box-shadow: 0 0 40px 2px rgba(37,73,214);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    background-color: #3b4cca;
+    box-shadow: 0 0 40px 2px rgba(37,73,214);
+}
+
+.header-content .logo {
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.header-content nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+    
+    
+}
+
+.header-content nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header-content .contact-info a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em;
+    background: linear-gradient(135deg,#3cb371, #9370db);
+    box-shadow: 0 0 40px 2px rgba(37,73,214);
+}
+
+.hero-content {
+    max-width: 50%;
+    box-shadow: 0 0 10px 20px rgba(37,73,214,0.18);
+}
+
+.hero-content .greeting {
+    font-size: 2.5em;
+    color: #fff;
+}
+
+.hero-content .availability {
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.hero-content .cta-button {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    background-color: #ff6f61;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero-image img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2em;
+    box-shadow: 0 0 40px 2px rgba(37,73,214);
+}
+
+.about, .services, .projects, .contact {
+    padding: 2em 0;
+}
+
+.about-content, .service-list, .project-list {
+    display: flex;
+    gap: 2em;
+}
+
+.about-content .about-text {
+    flex: 1;
+}
+
+.about-content .about-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.service-list .service-item {
+    flex: 1;
+    text-align: center;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 40px 2px rgba(37,73,214);
+}
+
+.service-list .service-item h3 {
+    margin-bottom: 0.5em;
+}
+
+.service-list .service-link {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    background-color: #3b4cca;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.project-list .project-item {
+    flex: 1;
+    text-align: center;
+}
+
+.project-list .project-item img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 0.5em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form .checkbox-group {
+    display: flex;
+    gap: 1em;
+}
+
+.contact-form button {
+    padding: 0.5em 1em;
+    background-color: #3b4cca;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #3b4cca;
+    color: #ffff;
+    text-align: center;
+    padding: 1em 0;
+}
