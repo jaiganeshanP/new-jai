@@ -1,37 +1,210 @@
-<!DOCTYPE html>
+            <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=2.0">
-    <title>Freelancer Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>freelancer portfolio</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+
     <style>
-      .myDiv{ 
+      .mydiv{ 
         text-align:right;
        
       }
 
       
+        body, html {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1em 2em;
+            background-color: #3b4cca;
+            box-shadow: 0 0 40px 2px rgba(37,73,214);
+        }
+
+        .header-content .logo {
+            font-size: 1.5em;
+            color: #fff;
+        }
+
+        .header-content nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1em;
+        }
+
+        .header-content nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 2em;
+            background: linear-gradient(135deg, #3cb371, #9370db);
+            box-shadow: 0 0 40px 2px rgba(37,73,214);
+        }
+
+        .hero-content {
+            max-width: 50%;
+        }
+
+        .hero-content .greeting {
+            font-size: 2.5em;
+            color: #fff;
+        }
+
+        .hero-content .availability {
+            font-size: 1.5em;
+            color: #fff;
+        }
+
+        .hero-content .cta-button {
+            display: inline-block;
+            margin-top: 1em;
+            padding: 0.5em 1em;
+            background-color: #ff6f61;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            border-radius: 50%;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2em;
+            box-shadow: 0 0 40px 2px rgba(37,73,214);
+        }
+
+        .about, .services, .projects, .contact {
+            padding: 2em 0;
+        }
+
+        .about-content, .service-list, .project-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2em;
+        }
+
+        .about-content .about-text {
+            flex: 1;
+        }
+
+        .about-content .about-image img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .service-list .service-item {
+            flex: 1;
+            text-align: center;
+            padding: 1em;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+
+        .service-list .service-item h3 {
+            margin-bottom: 0.5em;
+        }
+
+        .service-list .service-link {
+            display: inline-block;
+            margin-top: 1em;
+            padding: 0.5em 1em;
+            background-color: #3b4cca;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .project-list .project-item {
+            flex: 1;
+            text-align: center;
+        }
+
+        .project-list .project-item img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+        }
+
+        .contact-form input, .contact-form textarea {
+            padding: 0.5em;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .contact-form .checkbox-group {
+            display: flex;
+            gap: 1em;
+        }
+
+        .contact-form button {
+            padding: 0.5em 1em;
+            background-color: #3b4cca;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #3b4cca;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-content, .hero-image {
+                max-width: 100%;
+            }
+
+            .header-content {
+                flex-direction: column;
+            }
+
+            .header-content nav ul {
+                flex-direction: column;
+                gap: 0.5em;
+            }
+        }
+    
       </style>
 </head>
 <body>
  
-    <header class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#"><img src="images-removebg-preview.jpg" alt="Logo" class="logo"></a>
-        <button>
-        
-        
-            <ul class="navbar-nav ml-auto">
-                
-                <li class="nav-item">
-                    <a class="nav-link btn btn-success text-white" href="#">Sign in</a>
-                </li>
-            </ul>
-       
-        </button>
-    </header>
+   
   
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
@@ -39,59 +212,70 @@
 
     <header>
         <div class="header-content">
-            <div class="logo">First</div>
+            
+            <header class="navbar navbar-expand-lg float-left">
+                <a class="navbar-brand" href="#"><img src="images-removebg-preview.jpg" alt="logo" class="logo"></a>
+                </header>
+           
             <nav>
                 <ul>
                    
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#services">services</a></li>
+                    <li><a href="#projects">projects</a></li>
+                    <li><a href="#contact">contact</a></li>
                 </ul>
             </nav>
             <header>
+                
+            
         <div class="container d-flex justify-content-between align-items-center py-3">
             <div class="contact-info">
-                <button class="btn btn-danger" onclick="callContact()">Call: 120-240-9600</button>
+                <button class="btn btn-danger" onclick="callcontact()">call: 120-240-9600</button>
             </div>
         </div>
-    </header>
+       
+         <header>  
+            
+            <ul><a class="nav-link btn btn-success text-white" href="login.html">Sign In</a></ul>
+        </header>
+       
         </div>
     </header>
 
     <section class="hero">
         <div class="hero-content">
-            <div class="greeting">Hello friend!</div>
-            <div class="availability">I'm available for freelance work.</div>
-            <button class="cta-button" onclick="workTogether()">Let's Work Together</button>
+            <div class="greeting">hello friend!</div>
+            <div class="availability">i'm available for freelance work.</div>
+            <button class="cta-button" onclick="worktogether()">let's work together</button>
             
         </div>
         <div class="hero-image">
-            <img src="images.jpeg" alt="Joshua">
+            <img src="images.jpeg" alt="joshua">
         </div>
     </section>
 
     <section id="about" class="about">
         <div class="container">
-            <h2>My Story</h2>
+            <h2>my story</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>A little bit about Joshua</p>
+                    <p>a little bit about joshua</p>
                     <ul class="info-list">
-                        <li><strong>Name:</strong> Joshua Morgan</li>
-                        <li><strong>Birthday:</strong> Aug 12, 1986</li>
-                        <li><strong>Phone:</strong> 120-240-9600</li>
-                        <li><strong>Email:</strong> hello@josh.design</li>
+                        <li><strong>name:</strong> joshua morgan</li>
+                        <li><strong>birthday:</strong> aug 12, 1986</li>
+                        <li><strong>phone:</strong> 120-240-9600</li>
+                        <li><strong>email:</strong> hello@josh.design</li>
                     </ul>
                     <div class="info-box">
-                        <p>20+ Years of Experience</p>
-                        <p>245 Projects Completed</p>
-                        <p>640 Happy Clients</p>
-                        <p>72+ Awards Won</p>
+                        <p>20+ years of experience</p>
+                        <p>245 projects completed</p>
+                        <p>640 happy clients</p>
+                        <p>72+ awards won</p>
                     </div>
                 </div>
                 <div class="about-image">
-                    <img src="images.jpeg" alt="Joshua and colleagues">
+                    <img src="images.jpeg" alt="joshua and colleagues">
                 </div>
             </div>
         </div>
@@ -99,31 +283,31 @@
 
     <section id="services" class="services">
         <div class="container">
-            <h2>Services</h2>
+            <h2>services</h2>
             <div class="service-list">
                 <div class="service-item">
-                    <h3>Websites</h3>
-                    <p>Starting from $2,500</p>
-                    <p>You may want to explore this for the good services of the great websites.</p>
-                    <a href="#" class="service-link">Discover More</a>
+                    <h3>websites</h3>
+                    <p>starting from $2,500</p>
+                    <p>you may want to explore this for the good services of the great websites.</p>
+                    <a href="#" class="service-link">discover more</a>
                 </div>
                 <div class="service-item">
-                    <h3>Branding</h3>
-                    <p>Starting from $1,000</p>
-                    <p>You may want to explore this for the good branding services available here.</p>
-                    <a href="#" class="service-link">Discover More</a>
+                    <h3>branding</h3>
+                    <p>starting from $1,000</p>
+                    <p>you may want to explore this for the good branding services available here.</p>
+                    <a href="#" class="service-link">discover more</a>
                 </div>
                 <div class="service-item">
-                    <h3>Ecommerce</h3>
-                    <p>Starting from $3,000</p>
-                    <p>If you need an ecommerce store website for your business, check this out.</p>
-                    <a href="#" class="service-link">Discover More</a>
+                    <h3>ecommerce</h3>
+                    <p>starting from $3,000</p>
+                    <p>if you need an ecommerce store website for your business, check this out.</p>
+                    <a href="#" class="service-link">discover more</a>
                 </div>
                 <div class="service-item">
-                    <h3>SEO</h3>
-                    <p>Starting from $4,500</p>
-                    <p>This helps you to rank high on search engines and get the best out of your website.</p>
-                    <a href="#" class="service-link">Discover More</a>
+                    <h3>seo</h3>
+                    <p>starting from $4,500</p>
+                    <p>this helps you to rank high on search engines and get the best out of your website.</p>
+                    <a href="#" class="service-link">discover more</a>
                 </div>
             </div>
         </div>
@@ -131,19 +315,19 @@
 
     <section id="projects" class="projects">
         <div class="container">
-            <h2>Projects</h2>
+            <h2>projects</h2>
             <div class="project-list">
                 <div class="project-item">
-                    <img src="project1.jpg" alt="Project 1">
-                    <h3>Zoik Agency</h3>
+                    <img src="project1.jpg" alt="project 1">
+                    <h3>zoik agency</h3>
                 </div>
                 <div class="project-item">
-                    <img src="project2.jpg" alt="Project 2">
-                    <h3>The Watch</h3>
+                    <img src="project2.jpg" alt="project 2">
+                    <h3>the watch</h3>
                 </div>
                 <div class="project-item">
-                    <img src="project3.jpg" alt="Project 3">
-                    <h3>Polo</h3>
+                    <img src="project3.jpg" alt="project 3">
+                    <h3>polo</h3>
                 </div>
             </div>
         </div>
@@ -151,34 +335,34 @@
 
     <section id="contact" class="contact">
         <div class="container">
-            <h2>Say Hi</h2>
+            <h2>say hi</h2>
             <form class="contact-form">
-                <input type="text" name="name" placeholder="Name">
-                <input type="email" name="email" placeholder="Email Address">
+                <input type="text" name="name" placeholder="name">
+                <input type="email" name="email" placeholder="email address">
                 <div class="checkbox-group">
-                    <label><input type="checkbox" name="service" value="websites"> Websites</label>
-                    <label><input type="checkbox" name="service" value="branding"> Branding</label>
-                    <label><input type="checkbox" name="service" value="ecommerce"> Ecommerce</label>
-                    <label><input type="checkbox" name="service" value="seo"> SEO</label>
+                    <label><input type="checkbox" name="service" value="websites"> websites</label>
+                    <label><input type="checkbox" name="service" value="branding"> branding</label>
+                    <label><input type="checkbox" name="service" value="ecommerce"> ecommerce</label>
+                    <label><input type="checkbox" name="service" value="seo"> seo</label>
                 </div>
-                <textarea name="message" placeholder="Tell me about the project"></textarea>
-                <button type="submit">Send</button>
+                <textarea name="message" placeholder="tell me about the project"></textarea>
+                <button type="submit">send</button>
             </form>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 First Portfolio. All rights reserved. Design: TemplateMo</p>
+            <p>&copy; 2024 first portfolio. all rights reserved. design: templatemo</p>
         </div>
     </footer>
 
     <script>
-        function callContact() {
+        function callcontact() {
             window.location.href = "tel:120-240-9600";
         }
 
-        function workTogether() {
+        function worktogether() {
             window.location.href = "#contact";
         }
     </script>
