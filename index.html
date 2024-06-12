@@ -3,269 +3,67 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>freelancer portfolio</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Freelancer Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-
-    <style>
-      .mydiv{ 
-        text-align:right;
-       
-      }
-
-      
-        body, html {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: arial, sans-serif;
-        }
-
-        body {
-            line-height: 1.6;
-        }
-
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1em 2em;
-            background-color: #3b4cca;
-            box-shadow: 0 0 40px 2px rgba(37,73,214);
-        }
-
-        .header-content .logo {
-            font-size: 1.5em;
-            color: #fff;
-        }
-
-        .header-content nav ul {
-            list-style: none;
-            display: flex;
-            gap: 1em;
-        }
-
-        .header-content nav ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
-
-        .hero {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 2em;
-            background: linear-gradient(135deg, #3cb371, #9370db);
-            box-shadow: 0 0 40px 2px rgba(37,73,214);
-        }
-
-        .hero-content {
-            max-width: 50%;
-        }
-
-        .hero-content .greeting {
-            font-size: 2.5em;
-            color: #fff;
-        }
-
-        .hero-content .availability {
-            font-size: 1.5em;
-            color: #fff;
-        }
-
-        .hero-content .cta-button {
-            display: inline-block;
-            margin-top: 1em;
-            padding: 0.5em 1em;
-            background-color: #ff6f61;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-
-        .hero-image img {
-            max-width: 100%;
-            border-radius: 50%;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2em;
-            box-shadow: 0 0 40px 2px rgba(37,73,214);
-        }
-
-        .about, .services, .projects, .contact {
-            padding: 2em 0;
-        }
-
-        .about-content, .service-list, .project-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 2em;
-        }
-
-        .about-content .about-text {
-            flex: 1;
-        }
-
-        .about-content .about-image img {
-            max-width: 100%;
-            border-radius: 10px;
-        }
-
-        .service-list .service-item {
-            flex: 1;
-            text-align: center;
-            padding: 1em;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-        }
-
-        .service-list .service-item h3 {
-            margin-bottom: 0.5em;
-        }
-
-        .service-list .service-link {
-            display: inline-block;
-            margin-top: 1em;
-            padding: 0.5em 1em;
-            background-color: #3b4cca;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-
-        .project-list .project-item {
-            flex: 1;
-            text-align: center;
-        }
-
-        .project-list .project-item img {
-            max-width: 100%;
-            border-radius: 10px;
-        }
-
-        .contact-form {
-            display: flex;
-            flex-direction: column;
-            gap: 1em;
-        }
-
-        .contact-form input, .contact-form textarea {
-            padding: 0.5em;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-
-        .contact-form .checkbox-group {
-            display: flex;
-            gap: 1em;
-        }
-
-        .contact-form button {
-            padding: 0.5em 1em;
-            background-color: #3b4cca;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        footer {
-            background-color: #3b4cca;
-            color: #fff;
-            text-align: center;
-            padding: 1em 0;
-        }
-
-        @media (max-width: 768px) {
-            .hero {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .hero-content, .hero-image {
-                max-width: 100%;
-            }
-
-            .header-content {
-                flex-direction: column;
-            }
-
-            .header-content nav ul {
-                flex-direction: column;
-                gap: 0.5em;
-            }
-        }
-    
-      </style>
 </head>
 <body>
- 
-   
-  
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-    <header>
-        <div class="header-content">
-            
-            <header class="navbar navbar-expand-lg float-left">
-                <a class="navbar-brand" href="#"><img src="images-removebg-preview.jpg" alt="logo" class="logo"></a>
-                </header>
-           
-            <nav>
-                <ul>
-                   
-                    <li><a href="#about">about</a></li>
-                    <li><a href="#services">services</a></li>
-                    <li><a href="#projects">projects</a></li>
-                    <li><a href="#contact">contact</a></li>
-                </ul>
-            </nav>
-            <header>
-                
-            
-        <div class="container d-flex justify-content-between align-items-center py-3">
-            <div class="contact-info">
-                <button class="btn btn-danger" onclick="callcontact()">call: 120-240-9600</button>
+    <header class="bg-transparent">
+        <div class="card hero-card">
+            <div class="card-body">
+                <nav class="navbar navbar-expand-sm bg-transparent navbar-dark">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <img src="images-removebg-preview.jpg" alt="logo" class="logo">
+                        </a>
+                        <buttonclass="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                            <span class="navbar-toggler-icon"></span>
+                      </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#about">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#services">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#projects">Projects</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#contact">Contact</a>
+                                </li>
+                            </ul>
+                            <a class="nav-link btn btn-success text-white me-2" href="login.html">Sign In</a>
+                            <button class="btn btn-danger" onclick="callcontact()">Call: 120-240-9600</button>
+                        </div>
+                    </div>
+                </nav>
+                <div class="hero-content-container text-center py-5">
+                    <div class="hero-content">
+                        <div class="greeting">Hello Friend!</div>
+                        <div class="availability">I'm available for freelance work.</div>
+                        <button class="cta-button btn btn-primary mt-3" onclick="worktogether()">Let's Work Together</button>
+                    </div>
+                    <div class="hero-image mt-4">
+                        <img src="photo-elegant-male-model_639744-13664-removebg-preview.png" alt="joshua" class="img-fluid rounded">
+                    </div>
+                </div>
             </div>
-        </div>
-       
-         <header>  
-            
-            <ul><a class="nav-link btn btn-success text-white" href="login.html">Sign In</a></ul>
-        </header>
-       
         </div>
     </header>
 
-    <section class="hero">
-        <div class="hero-content">
-            <div class="greeting">hello friend!</div>
-            <div class="availability">i'm available for freelance work.</div>
-            <button class="cta-button" onclick="worktogether()">let's work together</button>
-            
-        </div>
-        <div class="hero-image">
-            <img src="images.jpeg" alt="joshua">
-        </div>
-    </section>
-
     <section id="about" class="about">
         <div class="container">
-            <h2>my story</h2>
+            <h2>My Story</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>a little bit about joshua</p>
+                    <p>A little bit about Joshua</p>
                     <ul class="info-list">
-                        <li><strong>name:</strong> joshua morgan</li>
-                        <li><strong>birthday:</strong> aug 12, 1986</li>
-                        <li><strong>phone:</strong> 120-240-9600</li>
-                        <li><strong>email:</strong> hello@josh.design</li>
+                        <li><strong>Name:</strong> Joshua Morgan</li>
+                        <li><strong>Birthday:</strong> Aug 12, 1986</li>
+                        <li><strong>Phone:</strong> 120-240-9600</li>
+                        <li><strong>Email:</strong> hello@josh.design</li>
                     </ul>
                     <div class="info-box">
                         <p>20+ years of experience</p>
@@ -275,7 +73,7 @@
                     </div>
                 </div>
                 <div class="about-image">
-                    <img src="images.jpeg" alt="joshua and colleagues">
+                    <img src="images.jpeg" alt="joshua and colleagues" class="img-fluid rounded">
                 </div>
             </div>
         </div>
@@ -283,51 +81,69 @@
 
     <section id="services" class="services">
         <div class="container">
-            <h2>services</h2>
+            <h2>Services</h2>
             <div class="service-list">
                 <div class="service-item">
-                    <h3>websites</h3>
-                    <p>starting from $2,500</p>
-                    <p>you may want to explore this for the good services of the great websites.</p>
-                    <a href="#" class="service-link">discover more</a>
+                    <h3>Websites</h3>
+                    <p>Starting from $2,500</p>
+                    <p>You may want to explore this for the good services of the great websites.</p>
+                    <a href="#" class="service-link">Discover More</a>
                 </div>
                 <div class="service-item">
-                    <h3>branding</h3>
-                    <p>starting from $1,000</p>
-                    <p>you may want to explore this for the good branding services available here.</p>
-                    <a href="#" class="service-link">discover more</a>
+                    <h3>Branding</h3>
+                    <p>Starting from $1,000</p>
+                    <p>You may want to explore this for the good branding services available here.</p>
+                    <a href="#" class="service-link">Discover More</a>
                 </div>
                 <div class="service-item">
-                    <h3>ecommerce</h3>
-                    <p>starting from $3,000</p>
-                    <p>if you need an ecommerce store website for your business, check this out.</p>
-                    <a href="#" class="service-link">discover more</a>
+                    <h3>Ecommerce</h3>
+                    <p>Starting from $3,000</p>
+                    <p>If you need an ecommerce store website for your business, check this out.</p>
+                    <a href="#" class="service-link">Discover More</a>
                 </div>
                 <div class="service-item">
-                    <h3>seo</h3>
-                    <p>starting from $4,500</p>
-                    <p>this helps you to rank high on search engines and get the best out of your website.</p>
-                    <a href="#" class="service-link">discover more</a>
+                    <h3>SEO</h3>
+                    <p>Starting from $4,500</p>
+                    <p>This helps you to rank high on search engines and get the best out of your website.</p>
+                    <a href="#" class="service-link">Discover More</a>
                 </div>
             </div>
         </div>
     </section>
 
+    <section id="companies" class="companies">
+        <div class="container">
+            <h2>Companies</h2>
+            <div class="companies-list">
+                <div class="companies-item">
+                    <img src="pngegg (2).png" alt="companies1" width="100px" class="img-fluid rounded">
+            </div>
+            <div class="companies-item">
+                <img src="pngegg (3).png" alt="companies2" width="100px" class="img-fluid rounded">
+        </div>
+        <div class="companies-item">
+            <img src="pngegg.png" alt="companies3" width="100px" class="img-fluid rounded">
+    </div>
+    <div class="companies-item">
+        <img src="pngegg copy.png" alt="companies4" width="100px" class="img-fluid rounded">
+</div>
+    </section>
+
     <section id="projects" class="projects">
         <div class="container">
-            <h2>projects</h2>
+            <h2>Projects</h2>
             <div class="project-list">
                 <div class="project-item">
-                    <img src="project1.jpg" alt="project 1">
-                    <h3>zoik agency</h3>
+                    <img src="pro1lo.png" alt="project 1" class="img-fluid rounded">
+                    <h3>Ludo Game</h3>
                 </div>
                 <div class="project-item">
-                    <img src="project2.jpg" alt="project 2">
-                    <h3>the watch</h3>
+                    <img src="Hangman-Game-1.jpeg" alt="project 2" class="img-fluid rounded">
+                    <h3>Hangman-Game</h3>
                 </div>
                 <div class="project-item">
-                    <img src="project3.jpg" alt="project 3">
-                    <h3>polo</h3>
+                    <img src="Dice-Roller.jpeg" alt="project 3" class="img-fluid rounded">
+                    <h3>Dice-Roller</h3>
                 </div>
             </div>
         </div>
@@ -335,36 +151,29 @@
 
     <section id="contact" class="contact">
         <div class="container">
-            <h2>say hi</h2>
+            <h2>Say Hi</h2>
             <form class="contact-form">
-                <input type="text" name="name" placeholder="name">
-                <input type="email" name="email" placeholder="email address">
+                <input type="text" name="name" placeholder="Name">
+                <input type="email" name="email" placeholder="Email Address">
                 <div class="checkbox-group">
-                    <label><input type="checkbox" name="service" value="websites"> websites</label>
-                    <label><input type="checkbox" name="service" value="branding"> branding</label>
-                    <label><input type="checkbox" name="service" value="ecommerce"> ecommerce</label>
-                    <label><input type="checkbox" name="service" value="seo"> seo</label>
+                    <label><input type="checkbox" name="service" value="websites"> Websites</label>
+                    <label><input type="checkbox" name="service" value="branding"> Branding</label>
+                    <label><input type="checkbox" name="service" value="ecommerce"> Ecommerce</label>
+                    <label><input type="checkbox" name="service" value="seo"> SEO</label>
                 </div>
-                <textarea name="message" placeholder="tell me about the project"></textarea>
-                <button type="submit">send</button>
+                <textarea name="message" placeholder="Tell me about the project"></textarea>
+                <button type="submit" class="btn btn-primary">Send</button>
             </form>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 first portfolio. all rights reserved. design: templatemo</p>
+            <p>&copy; 2024 for my purpose</p>
         </div>
     </footer>
 
-    <script>
-        function callcontact() {
-            window.location.href = "tel:120-240-9600";
-        }
-
-        function worktogether() {
-            window.location.href = "#contact";
-        }
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>
