@@ -9,7 +9,7 @@ header {
 }
 
 .hero-card {
-    background: url('jai.png') no-repeat center center;
+    background: url(jai.png) no-repeat center center;
     background-size: cover;
     border: none;
     color: white;
@@ -30,6 +30,10 @@ header {
 
 .hero-content-container {
     padding: 50px 0;
+    background: url('jai\ \(1\).png') no-repeat center center;
+    background-size: cover;
+    border: none;
+    color: white;
 }
 
 .hero-content .greeting {
@@ -88,7 +92,7 @@ header {
 }
 
 .info-box {
-    background-color: #f1f1f1;
+    background-color: #e3dddd;
     padding: 20px;
     border-radius: 10px;
     margin-top: 20px;
@@ -185,7 +189,7 @@ header {
 
 .project-item img {
     max-width: 100%;
-    height: auto;
+    height: 200px;
     border-radius: 10px;
     margin-bottom: 10px;
 }
