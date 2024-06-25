@@ -22,7 +22,7 @@
 
 
 <header class="bg-transparent sticky-top">
-    <div class="card hero-card">
+    <div class="caption-top">
         <div class="card-body">
             <nav class="navbar navbar-expand-md bg-transparent navbar-dark">
                 <div class="container-fluid">
@@ -59,6 +59,7 @@
         </div>
     </div>
 </header>
+
 <header>
     <div class="hero-content-container text-center py-5">
         <div class="container">
@@ -83,26 +84,18 @@
     </div>
 </header>
 
-    <section id="about" class="about py-5 m-5">
-        <div class="container-fluid">
-           
-                <div class="about-content text-center info-box">
+    <section id="about" class="about py-5 m-5 ">
+       <div class="about-content text-center  bg-transparent">
                     <h2 class="mb-4">My Story</h2>
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="about-image">
                                 <img src="images.jpeg" alt="Joshua and colleagues" class="img-fluid rounded">
                             </div>
-                            <ul class="info-list list-unstyled">
-                                <li><strong>Name:</strong> Joshua Morgan</li>
-                                <li><strong>Birthday:</strong> Aug 12, 1986</li>
-                                <li><strong>Phone:</strong> 120-240-9600</li>
-                                <li><strong>Email:</strong> hello@josh.design</li>
-                            </ul>
-                        </div>
+                            </div>
                         <div class="col-lg-6">
                             <div class="about-text mt-4">
-                                <div class="container2">
+                                <div class="container2 bg-transparent">
                                     <p>My name is Joshua Morgan. I specialize in web development and languages such as Java, C, and C++. With a strong foundation in these technologies, I have honed my skills to create robust, efficient, and scalable solutions. My passion for coding is matched by my commitment to continuous learning and staying updated with the latest industry trends.</p>
                                 </div>
                             </div>
@@ -110,7 +103,7 @@
                     </div>
                     <div class="row mt-4">
                         <div class="col-lg-6">
-                            <div class="container1">
+                            <div class="container1 bg-transparent">
                                 <p>With over <span class="highlights">20 years of experience</span> in web development and programming, I have successfully completed numerous projects, contributing to over <span class="highlights">640 happy clients</span> and winning <span class="highlights">72+ awards</span> in the process. My expertise spans across multiple programming languages, including Java, C, and C++, allowing me to deliver high-quality, scalable solutions that meet and exceed client expectations. Dedicated to continuous learning and innovation, I strive to create seamless and engaging user experiences through every project I undertake.</p>
                             </div>
                         </div>
@@ -427,28 +420,5 @@
         });
     });
 </script>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script>
-        const ctx = document.getElementById('experienceChart').getContext('2d');
-        const experienceChart = new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: ['Java', 'C', 'C++', 'Web Development', 'Projects', 'Clients', 'Awards'],
-                datasets: [{
-                    label: 'Experience',
-                    data: [20, 20, 20, 20, 640, 640, 72],
-                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
-                    borderColor: 'rgba(75, 192, 192, 1)',
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                scales: {
-                    y: {
-                        beginAtZero: true
-                    }
-                }
-            }
-        });
-  
+
 </html>
