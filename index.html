@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Freelancer Portfolio</title>
@@ -21,44 +22,50 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
 
-<header class="bg-transparent sticky-top">
-    <div class="caption-top">
-        <div class="card-body">
-            <nav class="navbar navbar-expand-md bg-transparent navbar-dark">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
-                        <img src="images-removebg-preview.jpg" alt="logo" class="logo">
-                    </a>
-                    <!-- Navbar Toggler Button -->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <!-- Navbar Collapse Menu -->
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav me-md-auto mb-2 mb-md-0">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#about">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#services">Services</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#projects">Projects</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#contact">Contact</a>
-                            </li>
-                        </ul>
-                        <div class="d-flex">
-                            <a class="nav-link btn btn-success text-white me-2" href="login.html">Sign In</a>
-                            <button class="btn btn-danger" onclick="callcontact()">Call: 120-240-9600</button>
+<body>
+    <header class="bg-transparent sticky-top">
+        <div class="caption-top">
+            <div class="card-body">
+                <nav class="navbar navbar-expand-md bg-transparent navbar-dark">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <img src="images-removebg-preview.jpg" alt="logo" class="logo">
+                        </a>
+                        <!-- Navbar Toggler Button -->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        
+                        <!-- Navbar Collapse Menu -->
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#about">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#services">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#projects">Projects</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#contact">Contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link btn btn-success text-white mt-2" href="login.html">Sign In</a>
+                                </li>
+                                <li class="nav-item">
+                                    <button class="btn btn-danger mt-2" onclick="callcontact()">Call: 120-240-9600</button>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                </div>
-            </nav>
+                </nav>
+            </div>
         </div>
-    </div>
-</header>
+    </header>
+
+
 
 <header>
     <div class="hero-content-container text-center py-5">
@@ -85,7 +92,7 @@
 </header>
 
     <section id="about" class="about py-5 m-5 ">
-       <div class="about-content text-center  bg-transparent">
+        <div class="container about-content text-center bg-transparent">
                     <h2 class="mb-4">My Story</h2>
                     <div class="row">
                         <div class="col-lg-6">
@@ -112,10 +119,9 @@
                                 <canvas id="experienceChart"></canvas>
                             </div>
                         </div>
-                   
+                    </div>
                 </div>
             </div>
-        </div>
     </section>
     
     
