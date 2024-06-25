@@ -10,20 +10,46 @@ header {
 
 
 }
-.card1 {
-    background: #f1c1be;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: center;
+.hero-content-container {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: white;
 }
+
+.card {
+    background: linear-gradient(135deg, #acbcff, #ffa4a4, #fdbb2d);
+    border: none;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
 .hero-card {
-    background: url(jai.png) no-repeat center center;
+   
+    background: linear-gradient(to bottom, #ff7e5f, #feb47b);
     background-size: cover;
     border: none;
     color: white;
 }
 
+.container1 p, .container2 p {
+    font-size: 18px;
+    color: #333;
+    text-align: justify;
+    margin: 10px 0;
+}
+.highlights {
+    font-weight: bold;
+    color: #000;
+}
+.experience-chart {
+    margin-top: 20px;
+}
+.row {
+    display: flex;
+    align-items: center; /* Vertically center align the columns */
+}
         .navbar-nav .nav-item .nav-link {
             padding: 10px 15px;
         }
@@ -53,7 +79,7 @@ header {
 
 .hero-content-container {
     padding: 50px 0;
-    background: url('jai\ \(1\).png') no-repeat center center;
+    background: linear-gradient(135deg, #fa9531, #fdfdfd, #fcd86a);
     background-size: cover;
     border: none;
     color: white;
@@ -185,6 +211,7 @@ h2 {
     text-align: center;
     padding: 20px;
 }
+
 
 .companies-item img{
     width: 75% !important;
