@@ -23,9 +23,35 @@ header {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-
 .hero-card {
+    background: linear-gradient(45deg, #ff7e5f, #feb47b);
+    border: none;
+    color: white;
+    height: 100px; /* Adjust the height as needed */
+}
+
+.navbar-brand .logo {
+    height: 50px; /* Adjust the logo height as needed */
+    width: auto;
+}
+
+.navbar {
+    padding: 0;/* Remove any extra padding */
+   
+}
+
+.card-body {
+    padding: 0; /* Remove padding to adjust height */
+}
+
+.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+}
+
+
+.caption-top {
    
     background: linear-gradient(to bottom, #ff7e5f, #feb47b);
     background-size: cover;
@@ -35,7 +61,7 @@ header {
 
 .container1 p, .container2 p {
     font-size: 18px;
-    color: #333;
+    
     text-align: justify;
     margin: 10px 0;
 }
@@ -85,6 +111,7 @@ header {
     color: white;
 }
 
+
 .hero-content .greeting {
     font-size: 2.5rem;
     font-weight: bold;
@@ -106,46 +133,36 @@ header {
     height: auto;
     border-radius: 10px;
 }
-.about-content h2{
-        text-align: center;
-        margin-bottom: 30px;
-}
-
-.about-content{
-    padding: 40px;
-    background-color: #f8f9fa;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+.about-content {
+    background: #cccbcb; /* Adjust as needed */
+    padding: 20px;
+ 
+  
 }
 
 .about-image img {
     max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-.about-text p {
-    align-self:center;
-    font-size: 1.1rem;
-    line-height: 1.6;
-}
-
-.info-list li {
-    margin-bottom: 10px;
-}
-
-.info-box {
-    background-color: #f8f9fa;
     border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.container2, .container1 {
+    background: transparent;
+}
+
+.highlights {
+    font-weight: bold;
+    color: #000;
 }
 
 .experience-chart {
-   
-    text-align: center;
-    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
+
+
+
 
 
 .info-list {
