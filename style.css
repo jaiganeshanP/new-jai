@@ -368,6 +368,41 @@ h2 {
     background-color: #0056b3;
 }
 
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.contact .card-body {
+    padding: 0rem;
+}
+
+.contact i {
+    font-size: 2.5rem;
+    color: #dc3545;
+}
+
+.contact h5 {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.contact p {
+    margin-top: 0.5rem;
+    color: #6c757d;
+}
+
+.contact form .form-control {
+    margin-bottom: 1rem;
+    border-radius: 0.25rem;
+}
+
+.contact form .btn {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+}
+
 .footer {
     text-align: center;
     padding: 20px 0;
